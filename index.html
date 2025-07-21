@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HACKMANDU453.99375 MHz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: url('https://univjoy.com/uploads/college/thump_1752939549.png') no-repeat center center fixed;
+      background-size: cover;
+      user-select: none;
+    }
+    video {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 320px;
+      height: 180px;
+      object-fit: cover;
+      z-index: 5;
+      pointer-events: none;
+    }
+    .contact-box {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 999;
+      background: rgba(0,0,0,0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      border: 1px solid red;
+      backdrop-filter: blur(5px);
+    }
+    .marquee {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 999;
+      color: red;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
+    }
+    @keyframes scroll {
+      0% {transform: translateX(0);}
+      100% {transform: translateX(-100%);}
+    }
+    .protest-banner {
+      position: fixed;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      z-index: 999;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff3333;
+      background: rgba(0,0,0,0.7);
+      padding: 10px;
+      backdrop-filter: blur(5px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="protest-banner">
+  🛑 Say NO to Digital Censorship! 📵 Banning Telegram is silencing voices, not solving problems. 🇳🇵 We demand #FreeInternetNepal #UnbanTelegram
+</div>
+
+<video id="myVideo" autoplay muted loop playsinline>
+  <source src="https://yubikostheoghacker.github.io/hackeddd/ssstik.io_@bbb_baymax10__1752943800239.mp4" type="video/mp4">
+</video>
+
+<div class="contact-box" onclick="window.open('https://t.me/YOUR_TELEGRAM_LINK')">
+  Contact Us
+</div>
+
+<div class="marquee">
+  <span>We are HACKMANDU453.99375 MHz — If you're seeing this, your system is compromised. Respect your security. #Hackmandu</span>
+</div>
+
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', e => e.preventDefault());
+
+  // Unmute audio on first user interaction
+  document.addEventListener('click', () => {
+    const vid = document.getElementById('myVideo');
+    vid.muted = false;
+    vid.volume = 1;
+  });
+
+  // Block basic dev tools shortcuts
+  document.onkeydown = e => {
+    if (e.keyCode === 123  (e.ctrlKey && e.shiftKey && ['I', 'J'].includes(e.key.toUpperCase()))  (e.ctrlKey && e.key.toUpperCase() === 'U')) {
+      e.preventDefault();
+    }
+  };
+
+  // Iframe white background fix
+  if (window.top !== window.self) {
+    document.body.style.background = "url('https://univjoy.com/uploads/college/thump_1752939549.png')";
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'fixed';
+  }
+
+  // Basic anti-debugger trick
+  setInterval(() => {
+    const start = performance.now();
+    debugger;
+    const end = performance.now();
+    if (end - start > 100) location.reload();
+  }, 2000);
+</script>
+
+</body>
+</html>
